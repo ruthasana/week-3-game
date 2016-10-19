@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Hangman Game</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	
+</head>
+<body>
+	<header>
+		<div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+					<div class="page-header">
+					  <h1>Hangman Game <small>(Countries)</small></h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+        <section class="container">
+            <div class="row">
+                <div class="col-lg-6 text-center">
+				<img src="assets/images/countries.jpg" height=200px width=200px class="img-responsive" alt="">
+                </div>
+            
+       
+        		<div class="col-lg-6 text-center">
+        			<div class="row">
+						<div id="start" class="col-lg-12 text-center">
+                		
+                		</div>
+                	</div>
+                <br>
+                	<div class="row">
+						<div id="guessinput" class="col-lg-12 text-center">
+                		<form id="hangman">
+					    	<input type="text" maxlength="1" minlength="1" name="letter" id="letter" placeholder="Guess a letter" />
+					    	<input id="guess" name="guess" type="submit" value="Guess" />
+					    	<button id="restart" name="restart" type="button">Restart</button>
+						</form>
+					
+						<ul id="letters"></ul>
+	
+						<p id="man"></p>
+						<p id="output" class="output"></p>
+                		</div>
+            		</div>
+        </section>
+    <script src="assets/javascript/game.js"></script>
+</body>
+</html>
